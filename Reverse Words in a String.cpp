@@ -1,8 +1,3 @@
-//Say, s = " . . . a . . good . . . example . ." [ dot (.) means space here, as i cannt add multiple spaces in discussions! ]
-//Step 1: Remove spaces from the beginning and ending. Now, s = "a . . good . . . example"
-//Step 2: Now remove extra spaces from middle. Nows = "a good example"
-//Step 3: Reverse the string. Now, s = "elpmaxe doog a"
-//Step 4: Now reverse each word. Final s = "example good a"
 
 //Code: T.C. : o(n) and S.C. : o(n)
 class Solution {
@@ -29,6 +24,11 @@ public:
  }
 };
 
+//Say, s = " . . . a . . good . . . example . ." [ dot (.) means space here, as i cannt add multiple spaces in discussions! ]
+//Step 1: Remove spaces from the beginning and ending. Now, s = "a . . good . . . example"
+//Step 2: Now remove extra spaces from middle. Nows = "a good example"
+//Step 3: Reverse the string. Now, s = "elpmaxe doog a"
+//Step 4: Now reverse each word. Final s = "example good a"
 
 //Code: T.C. : o(n) and S.C. : o(1)
 class Solution {
