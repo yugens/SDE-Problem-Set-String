@@ -4,9 +4,33 @@
 //Step 3: Reverse the string. Now, s = "elpmaxe doog a"
 //Step 4: Now reverse each word. Final s = "example good a"
 
+//Code: T.C. : o(n) and S.C. : o(n)
+class Solution {
+public:
+    string reverseWords(string s) {
+        
+    int n = s.size();
+    string result ;
+    int beg = 0 ;
+    while(beg < n){    
+    while(beg < n and s[beg] == ' ')
+        beg++;
+    if(beg >= n) break;    
+    int end = beg+1;
+    while(end < n and s[end] != ' ')
+        end++;
+    string sub = s.substr(beg , end-beg);
+    if(result.size()==0)
+        result = sub ;
+    else result = sub + " " + result;
+    beg = end+1;    
+  }     
+  return result; 
+ }
+};
+
 
 //Code: T.C. : o(n) and S.C. : o(1)
-
 class Solution {
 public:
     string reverseWords(string s) {
